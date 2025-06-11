@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 
-  // const name = 'Hamza';
+  const name = 'Hamza';
   const handleNameChange= () => {
     const names = ['Hamza', 'Ali', "Ahmad"];
     const int = Math.floor(Math.random() * 3);
@@ -25,6 +25,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>Hello {name}</p>
         <p>Hello {[1,2,3]}</p>{/* can pass array, number, str, not boolean or object */}
         <p>Hello {handleNameChange()}!</p>
       </header>
